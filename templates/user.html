@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>{{user.username}}</h1>
+  <small>Written by {{user.email}} on {{user.create_date}}</small>
+  <hr>
+  <div>
+    {{user.body | safe}}
+  </div>
+{% endblock %}
